@@ -39,6 +39,7 @@ outfile.write('\n')
 #Write values from each dictionary
 while num < len(datastore["medical"]):
     for key in datastore["medical"][num]:
+        print(datastore["medical"][num][key])
         value = str(datastore["medical"][num][key])
         outfile.write( value + DELIM )
     
